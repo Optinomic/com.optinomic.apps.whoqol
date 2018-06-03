@@ -93,14 +93,10 @@
             _sr: {
                 type: Object,
                 statePath: function(state) {
-                    if ((this.appId !== null) && (this.appId !== undefined)) {
-                        if (this.appId in state.survey_responses.data) {
-                            // console.log('(bscl-element) _sr:', state.survey_responses.data[this.appId]);
-                            return state.survey_responses.data[this.appId]
-                        } else {
-                            return null
-                        };
-                    } else {
+                    try {
+                        return state.survey_responses.data[this.appId];
+                    }
+                    catch(err) {
                         return null
                     };
                 },
