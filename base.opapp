@@ -6,6 +6,7 @@ version = __opapp_version()
 type = patient
 
 [description]
+Beurteilung der Dimensionen - Physischen und Psychischen Lebensqualität.
 
 [developer]
 first_name = Beat
@@ -15,12 +16,6 @@ email = beat@optinomic.com
 company = Optinomic Gmbh
 phone = +41 (0)44 508 26 76
 website = http://www.optinomic.com/
-
-
-[template WHOQOL 6 12]
-__opapp_include(lib/polymer/index.m4)
-__opapp_include(elements/element-whoqol.html)
-__opapp_include(elements/view.html)
 
 
 [readme]
