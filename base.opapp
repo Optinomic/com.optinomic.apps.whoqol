@@ -24,6 +24,10 @@ __opapp_include(readme.md)
 [dependencies]
 
 
+[template WHOQOL 6 12]
+__opapp_include(optinomic_lib/dist/templates/ch.suedhang.apps.whoqol.html)
+
+
 [survey]
 id = WHOQOL
 type = lime
